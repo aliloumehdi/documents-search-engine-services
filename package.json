@@ -16,6 +16,14 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "lodash": "^4.17.21",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "node-tesseract-ocr": "^2.2.1",
+    "office-text-extractor": "^2.0.0",
+    "officeparser": "^2.3.0",
+    "pdf-img-convert": "^1.0.5",
+    "pdf-parse": "^1.1.1",
+    "pdf-text-extract": "^1.5.0",
+    "pdf.js": "^0.1.0",
+    "scissors": "^0.3.0"
   }
 }
