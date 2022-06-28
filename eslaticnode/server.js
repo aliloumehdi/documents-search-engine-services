@@ -1,9 +1,9 @@
 
 const axios = require('axios').default;
-
+require('dotenv').config();
 const url = process.env.ELASTIC_NODE_URL
 
-exports.post = () => axios.get('http://localhost:3000/docs?ID=12345')
+exports.post = (data) => axios.post(url+'/doc_index4/_doc/?pretty',data)
 .then(function (response) {
   // handle success
   console.log(response.data);

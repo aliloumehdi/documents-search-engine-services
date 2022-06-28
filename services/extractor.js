@@ -19,10 +19,10 @@ exports.pdfextractor = (doc, path) => {
 
     textPDFextract(doc).then(res => {
       const resData = res.text
-      console.log(resData.replace('\n', '').trim())
+
 
       if (resData.replace('\n', '').trim().length > 1) {
-        console.log(res);
+      
         resolve(res.text)
       }
       else {
@@ -30,12 +30,12 @@ exports.pdfextractor = (doc, path) => {
         splitAndDoOcr(path).then(rr => {
 
 
-          console.log(doc);
+      
           resolve(rr)
         })
       }
     }, err => {
-      console.log(err);
+   
     })
 
 
@@ -128,7 +128,7 @@ const splitAndDoOcr = async (doc) => {
 
           text += res + " "
           if (i == (pdfArray.length)) {
-            console.log(text);
+           
             resolve(text);
 
           }
